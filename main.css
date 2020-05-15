@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #484747;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 5%;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 5% 0;
+}
+
+nav {
+    text-align: center;
+    padding: 5%;
+    background-color: #9fdcc8;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    padding: 5%;
+}
+
+h2 {
+    padding: 10px 0;
+}
+
+footer {
+    padding: 5%;
+    font-size: 0.95rem;
+    text-align: center;
+    background-color: #6f6e6e;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+/* ***** START MIN WIDTH 425PX ***** */
+@media (min-width: 425px) {
+    h1 {
+        padding: 2% 0;
+    }
+
+    nav {
+        padding: 3%;
+    }
+
+    main {
+        padding: 3% 5%;
+    }    
+}
+/* ***** END MIN WIDTH 425PX ***** */
+
+/* ***** START MIN WIDTH 500PX ***** */
+@media (min-width: 500px) {
+    header {
+        padding: 2% 5%;
+    }
+
+    nav {
+        padding: 2%;
+    }
+
+    main {
+        padding: 2% 5%;
+    }    
+
+    footer {
+        padding: 3%;
+    }
+}
+/* ***** END MIN WIDTH 500PX ***** */
+
+/* ***** START MIN WIDTH 1024PX ***** */
+@media (min-width: 1024px) {
+    nav ul {
+        width: 1024px;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 13px;
+    }
+
+    h1 {
+        padding: 5px 0;
+    }
+
+    .main-copy {
+        width: 1024px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+/* ***** END MIN WIDTH 1024PX ***** */
+
