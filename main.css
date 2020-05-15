@@ -47,6 +47,16 @@ nav ul {
     justify-content: space-around;
 }
 
+nav ul li a {
+    color: #6f6e6e;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
 main {
     padding: 5%;
 }
